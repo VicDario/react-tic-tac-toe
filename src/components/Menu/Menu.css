@@ -1,0 +1,39 @@
+.menu {
+    background-color: #4a443d;
+    width: 60%;
+    padding: 15px;
+}
+
+.menu__title {
+    color: white;
+}
+.menu__input {
+    padding-bottom: 15px;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-color: #413a34;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 70px;
+}
+
+.X {
+    color: rgb(214, 226, 49);
+}
+.O {
+    color: rgb(46, 152, 197);
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu__button {
+    display: flex;
+    justify-content: center;
+}
