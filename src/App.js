@@ -1,11 +1,12 @@
 import {useState} from 'react';
 import './App.css';
 import Menu from './components/Menu/Menu';
-import React from 'react';
+import Game from './components/Game/Game'
 
 function App() {
 
   let [players, setPlayer] = useState(false);
+  let [turn, setTurn] = useState(true);
   let [game, setGame] = useState([
     '', '', '',
     '', '', '',
@@ -19,7 +20,8 @@ function App() {
       </header>
       <main className="main">
         {
-          !players && <Menu setPlayer={setPlayer}/>
+          !players ? <Menu setPlayer={setPlayer}/> :
+          <Game game={game} setGame={setGame}  players={players} turn={turn} setTurn={setTurn} />
         }
         
       </main>
