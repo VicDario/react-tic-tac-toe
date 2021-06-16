@@ -24,8 +24,8 @@ function Main (props) {
                 <input type="text" id="playerTwo" placeholder="Player 2 Name" onChange={setName2}/>
             </div>
             <div className="menu__button">
-                <div type="button" className="button X" name="playerName" onClick={initGame}>x</div>
-                <div type="button" className="button O" name="playerName" onClick={initGame}>o</div>
+                <div type="button" className="button X" name="playerName" onClick={initGame}>X</div>
+                <div type="button" className="button O" name="playerName" onClick={initGame}>O</div>
             </div>
         </div>
     );

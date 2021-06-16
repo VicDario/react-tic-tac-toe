@@ -6,8 +6,8 @@ function Game (props) {
         if(props.game[key] !== '') return;
         let updatedGame = props.game.map((item, itemNumber) => {
             if(itemNumber === key){
-                if(props.turn) return 'x';
-                else return 'o';
+                if(props.turn) return 'X';
+                else return 'O';
             }
             return item;
         })
