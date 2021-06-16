@@ -10,10 +10,17 @@
     height: 100px;
 }
 
-.turn {
-    color: white;
+.title-game {
     text-align: center;
     width: 300px;
+}
+
+.turn {
+    color: white;
+}
+
+.win {
+    color: greenyellow;
 }
 
 .item0 {

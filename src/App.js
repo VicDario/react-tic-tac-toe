@@ -6,12 +6,6 @@ import Game from './components/Game/Game'
 function App() {
 
   let [players, setPlayer] = useState(false);
-  let [turn, setTurn] = useState(true);
-  let [game, setGame] = useState([
-    '', '', '',
-    '', '', '',
-    '', '', '',
-  ])
 
   return (
     <div className="App">
@@ -21,7 +15,7 @@ function App() {
       <main className="main">
         {
           !players ? <Menu setPlayer={setPlayer}/> :
-          <Game game={game} setGame={setGame}  players={players} turn={turn} setTurn={setTurn} />
+          <Game players={players} />
         }
         
       </main>
